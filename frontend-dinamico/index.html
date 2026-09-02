@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/main.css">
+    <script type="module" src="Scripts/main.js"></script>
+    <title>Calculadora de Cuota Mensual</title>
+</head>
+<body>
+    <h1>Calculadora de Cuota Mensual</h1>
+    <main>
+        <section class="laInfo">
+            <div>
+                <table class="datos_entrada">
+                    <caption>Datos del préstamo</caption>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" value="" id="elNombre" name="nombre"></td>
+                    </tr>
+                    <tr>
+                        <td>Préstamo ($)</td>
+                        <td><input type="number" step="any" value="" id="elPrestamo" name="prestamo"></td>
+                    </tr>
+                    <tr>
+                        <td>Meses (n)</td>
+                        <td><input type="number" step="1" value="" id="losMeses" name="meses"></td>
+                    </tr>
+                    <tr>
+                        <td>Interés (i, ej. 0.15)</td>
+                        <td><input type="number" step="any" value="" id="elInteres" name="interes"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="error" id="error"></div>
+            <div>
+                <textarea id="laRespuesta" readonly>Salida---</textarea>
+            </div>
+            <div>
+                <button id="btnCalcular">Calcular</button>
+                <button id="btnHistorial">Ver historial</button>
+            </div>
+            <hr>
+            <div class="reportes">
+                <button id="btnSumatoria">Sumatoria de cuotas</button>
+                <button id="btnCuotasAltas">Cuotas &gt; $300000</button>
+                <button id="btnMenosUnAnio">Pagan en &lt; 1 año</button>
+                <button id="btnPrestamoAlto">1er préstamo &gt; $5000000</button>
+                <button id="btnInteresBajo">1er interés &lt; 2%</button>
+                <button id="btnIncrementarCuotas">Incrementar cuotas +$90000</button>
+                <button id="btnDecrementarPrestamos">Decrementar préstamos -$90000</button>
+                <button id="btnSoloCuotas">Solo cuotas</button>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div class="coloreado">
+            Práctica de Estructuras de Datos y Algoritmos 1 - Universidad Autónoma de Occidente
+        </div>
+    </footer>
+</body>
+</html>

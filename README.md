@@ -1,4 +1,8 @@
-# Estructuras de Datos y Algoritmos 1 — Práctica BackEnd
+# Estructuras de Datos y Algoritmos 1
+
+Prácticas del curso EDyA1: calculadora de cuota mensual de un préstamo, resuelta tanto en BackEnd (este directorio) como en FrontEnd ([`frontend-dinamico/`](frontend-dinamico/)).
+
+## Práctica BackEnd
 
 Servidor web en Node.js + Express que calcula la cuota mensual de un préstamo, dado el monto, el plazo en meses y la tasa de interés — práctica de la sesión de Desarrollo BackEnd del curso.
 
