@@ -1,4 +1,4 @@
-# Estructuras de Datos y Algoritmos 1
+# Estructura de Datos 1
 
 Prácticas del curso EDyA1: calculadora de cuota mensual de un préstamo, resuelta tanto en [BackEnd](#práctica-backend) (este directorio) como en [FrontEnd Dinámico](#práctica-frontend-dinámico) ([`frontend-dinamico/`](frontend-dinamico/)).
 
