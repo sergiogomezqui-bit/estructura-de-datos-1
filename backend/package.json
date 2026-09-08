@@ -1,0 +1,21 @@
+{
+  "name": "practica-lab1-backend",
+  "version": "1.0.0",
+  "description": "API JSON para la calculadora de cuota de prestamo - EDyA1 UAO",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,51 @@
+body {
+    background-color: lightcyan;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+table {
+    width: 320px;
+    margin: 20px auto;
+    border: 2px solid;
+}
+
+th, td, tr {
+    border: 1px solid;
+}
+
+.error {
+    color: crimson;
+    min-height: 20px;
+}
+
+textarea {
+    width: 320px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
