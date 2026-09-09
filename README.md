@@ -6,7 +6,7 @@ Algoritmos 1 (EDyA1), Universidad Autonoma de Occidente.
 **Grupo:** Sergio Gómez — Brandon Bonilla
 
 El BackEnd y el FrontEnd son dos aplicaciones independientes que se comunican unicamente
-por **JSON**, tal como pide la entrega.
+por **JSON**, asi como lo pide la entrega.
 
 ## Estructura
 
