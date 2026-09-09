@@ -3,6 +3,8 @@
 Calculadora de cuota de prestamo (amortizacion francesa) — curso Estructuras de Datos y
 Algoritmos 1 (EDyA1), Universidad Autonoma de Occidente.
 
+**Grupo:** Sergio Gómez — Brandon Bonilla
+
 El BackEnd y el FrontEnd son dos aplicaciones independientes que se comunican unicamente
 por **JSON**, tal como pide la entrega.
 
