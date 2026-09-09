@@ -25,6 +25,10 @@ async function calcular() {
     divError.textContent = 'El nombre, prestamo, n o i no fueron ingresados o son invalidos';
     return;
   }
+  if (Number(i) < 0) {
+    divError.textContent = 'El interes no puede ser negativo';
+    return;
+  }
   divError.textContent = '';
 
   try {
