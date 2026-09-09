@@ -6,7 +6,7 @@ Algoritmos 1 (EDyA1), Universidad Autonoma de Occidente.
 **Grupo:** Sergio Gómez — Brandon Bonilla
 
 El BackEnd y el FrontEnd son dos aplicaciones independientes que se comunican unicamente
-por **JSON**, asi como lo pide la entrega.
+por **JSON**, tal como pide la entrega.
 
 ## Estructura
 
@@ -43,3 +43,8 @@ servidor estatico). Se conecta al backend en `http://localhost:3000/prestamos`.
 cd backend
 npm test
 ```
+
+## Autores
+
+- **Sergio Gómez** — arquitectura del backend (API JSON), integración con el frontend, pruebas.
+- **Brandon Bonilla** — pruebas adicionales de casos borde (interés 0, préstamos grandes), validación de entrada en el frontend.

@@ -5,6 +5,9 @@
 */
 
 function calcularCuota(prestamo, n, i) {
+  if (i === 0) {
+    return prestamo / n;
+  }
   const factor = Math.pow(1 + i, n);
   return prestamo * (factor * i) / (factor - 1);
 }
