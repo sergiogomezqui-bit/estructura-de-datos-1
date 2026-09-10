@@ -15,14 +15,27 @@ página.
 
 ## Reglas de cálculo
 
+Implementadas exactamente como las define el enunciado, respetando los nombres de variable
+que usa:
+
 - `costoPeso = pesoKg * 2.0`
 - `costoDistancia = distanciaKm * 0.05`
 - `subtotal = costoPeso + costoDistancia`
-- `impuesto = subtotal * 0.08`
-- `total = subtotal + impuesto`
+- `impuesto = totalConDescuento * 0.08`
+- `total = totalConDescuento + impuesto`
 
-El campo "Código de descuento" es opcional y se captura, pero el enunciado no define ninguna
-regla de descuento concreta, así que no afecta el cálculo.
+### Sobre el "Código de descuento" y `totalConDescuento`
+
+El formulario pide capturar un código de descuento (texto, opcional), y el paso de impuesto
+usa una variable `totalConDescuento` — pero en ningún punto del enunciado se especifica una
+fórmula, porcentaje o regla de negocio que conecte el código ingresado con un descuento
+concreto sobre el subtotal.
+
+Ante esa ambigüedad, se optó por la interpretación más fiel a lo que sí está definido: como
+no existe una regla de descuento especificada, `totalConDescuento` es equivalente al
+`subtotal` (`aplicarDescuento()` en `scripts/calculos.js`). El campo se captura y queda
+disponible para una futura regla de negocio, pero no se inventó un porcentaje arbitrario que
+el enunciado no pidió, para no desviarse de los cálculos tal como fueron especificados.
 
 ## Validaciones
 
