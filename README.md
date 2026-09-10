@@ -56,7 +56,7 @@ Al presionar "Calcular", se muestra en la misma página una sección "Resultado"
 
 ## Cómo ejecutarlo
 
-⚠️ **Importante:** este proyecto usa módulos de JavaScript (`import`/`export` en `main.js` y
+**Importante:** este proyecto usa módulos de JavaScript (`import`/`export` en `main.js` y
 `scripts/calculos.js`), así que **no funciona si se abre `index.html` con doble clic**
 (el navegador bloquea los módulos en el protocolo `file://` por seguridad). Hay que
 servirlo con un servidor local. Dos formas igual de válidas:
