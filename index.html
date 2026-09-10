@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="main.js"></script>
+    <title>Calculadora de Cotizacion de Envio</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora de Cotización de Envío</h1>
+
+        <form id="formCotizacion">
+            <table>
+                <caption>Datos del envío</caption>
+                <tr>
+                    <td><label for="nombre">Nombre del cliente</label></td>
+                    <td><input type="text" id="nombre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pesoKg">Peso del paquete (kg)</label></td>
+                    <td><input type="number" id="pesoKg" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label for="distanciaKm">Distancia (km)</label></td>
+                    <td><input type="number" id="distanciaKm" step="1" required></td>
+                </tr>
+                <tr>
+                    <td><label for="codigoDescuento">Código de descuento</label></td>
+                    <td><input type="text" id="codigoDescuento"></td>
+                </tr>
+            </table>
+
+            <div class="error" id="error" role="alert"></div>
+
+            <button type="submit" id="btnCalcular">Calcular</button>
+        </form>
+
+        <section id="resultado" class="resultado" hidden>
+            <h2>Resultado</h2>
+            <ul>
+                <li><strong>Nombre del cliente:</strong> <span id="resNombre"></span></li>
+                <li><strong>Costo por peso:</strong> $<span id="resCostoPeso"></span></li>
+                <li><strong>Costo por distancia:</strong> $<span id="resCostoDistancia"></span></li>
+                <li><strong>Subtotal:</strong> $<span id="resSubtotal"></span></li>
+                <li><strong>Impuesto (8%):</strong> $<span id="resImpuesto"></span></li>
+                <li><strong>Total final:</strong> $<span id="resTotal"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        Práctica de Estructuras de Datos y Algoritmos 1 - Universidad Autónoma de Occidente
+    </footer>
+</body>
+</html>
