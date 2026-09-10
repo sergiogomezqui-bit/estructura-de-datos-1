@@ -1,9 +1,3 @@
-/*
-*  Archivo calculos.js
-*  Descripción:
-*  Reglas de calculo puras (sin DOM) de la calculadora de cotizacion de envio.
-*/
-
 const COSTO_POR_KG = 2.0;
 const COSTO_POR_KM = 0.05;
 const TASA_IMPUESTO = 0.08;

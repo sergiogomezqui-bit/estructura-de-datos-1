@@ -1,11 +1,3 @@
-/*
-*  archivo main.js
-*  Descripción:
-*  Maneja el formulario de la calculadora de cotizacion de envio: valida
-*  los datos ingresados, invoca las reglas de calculo y muestra el
-*  resultado en el HTML.
-*/
-
 import { calcularCotizacion } from './scripts/calculos.js';
 
 const form = document.getElementById('formCotizacion');
