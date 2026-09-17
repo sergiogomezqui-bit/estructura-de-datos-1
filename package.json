@@ -1,0 +1,10 @@
+{
+  "name": "frontend-dinamico-edya1",
+  "version": "1.0.0",
+  "description": "Practica FrontEnd Dinamico (calculadora de cuota de prestamo, historial y reportes) - EDyA1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/"
+  }
+}
