@@ -9,5 +9,6 @@ Cada entrega vive en su propia rama:
 - [`frontend-dinamico-dom`](../../tree/frontend-dinamico-dom) — Introducción a FrontEnd Dinámico (DOM): formulario con manipulación del DOM.
 - [`practica-lab1`](../../tree/practica-lab1) — Práctica Lab 1: backend (API JSON) y frontend como aplicaciones separadas.
 - [`cotizacion-envio`](../../tree/cotizacion-envio) — Calculadora de cotización de envío.
+- [`taller-analisis-algoritmos-iterativos`](../../tree/taller-analisis-algoritmos-iterativos) — Taller de análisis de algoritmos iterativos (Corte 2): conteo de instrucciones y complejidad Big O.
 
 Cada rama tiene su propio README con el detalle de esa práctica.
