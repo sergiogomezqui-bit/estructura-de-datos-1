@@ -11,8 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Node y tests (solo si hay package.json)
+        if: hashFiles('package.json') != ''
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm install
-      - run: npm test
+      - if: hashFiles('package.json') != ''
+        run: npm install
+      - if: hashFiles('package.json') != ''
+        run: npm test
