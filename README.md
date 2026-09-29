@@ -7,5 +7,7 @@ Solución del taller de Estructuras de Datos y Algoritmos 1 (UAO).
 
 Archivos:
 
+- `Enunciado_Taller_Analisis_Algoritmos_Iterativos.pdf`
+
 - `Solucion_Taller_Analisis_Algoritmos_Iterativos.docx`
 - `Solucion_Taller_Analisis_Algoritmos_Iterativos.pdf`
