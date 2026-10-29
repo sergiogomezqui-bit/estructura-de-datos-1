@@ -1,3 +1,4 @@
+// Practica Calificable Corte 3 - Sergio Gómez Quiñones - Código 2226785
 function ordenarAscendente_supermercado (bd){
     // invocar método sort para ordenar ascendente, con base en el nombre de los supermercados
     bd.sort(function(a, b){
