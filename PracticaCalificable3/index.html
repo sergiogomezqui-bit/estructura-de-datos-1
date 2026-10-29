@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <script src="Scripts/main.js" type="module"></script>
+	<title>Practica EDyA1 - Corte 3_ Grupo1</title>
+</head>
+<body>
+    <header>
+        <img src="Images/Logo-50-años.png" alt="Logo 50 años"> 
+        <h1>Practica Calificable EDyA1 - Corte 3_G1</h1>       
+    </header>
+    <main>
+        <section>
+            <table>
+                <caption>Aplicativo para gestionar Supermercados</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Atributo</th>
+                        <th >Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Supermercado</td>
+                        <td>
+                            <input type="text" value="SuperCali"  id="elSupermercado">                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Patrimonio</td>
+                        <td>
+                            <input type="text" value="150000000" id="elPatrimonio">                           
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td colspan="2">Numero Tiendas</td>
+                        <td>
+                            <input type="text" value="2" id="elNroTiendas">                           
+                        </td>
+                    </tr>                  
+                    <tr>
+                        <td rowspan="3">Proveedor</td>
+                        <td>Nombre</td>
+                        <td>
+                            <input type="text" value="Manuelita" id="elProveedor">                           
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>Producto</td>
+                        <td>
+                            <select id="elProducto">
+                                <option value="Arroz">Arroz</option><!-- Opción por defecto -->
+                                <option value="Azucar" selected>Azucar</option> 
+                                <option value="Panela">Panela</option>
+                                <option value="Harina">Harina</option>
+                            </select>                       
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>Producción</td>
+                        <td>
+                            <input type="text" value="250000"  id="laProduccion">                           
+                        </td>
+                    </tr>                                                
+                </tbody>
+            </table>
+            <fieldset>
+                <legend>Funcionalidades</legend> 
+                <button id="ingresar">Ingresar Supermercado</button>
+                <button id="buscar">Buscar Supermercado</button>
+                <input type="text" value="SuperCali" id="supermercadoBuscado"><br><br>
+                <textarea id="respuesta" cols="70" rows="9" readonly>....</textarea>  
+            </fieldset> <hr>      
+        </section>
+    </main>
+    <footer>
+        <p>Creado por el profesor Orlando Arboleda, para el curso de EDyA1 en el Universidad Autónoma de Occidente</p>
+    </footer>
+</body>
+</html>
