@@ -1,9 +1,7 @@
 function ordenarAscendente_supermercado (bd){
     // invocar método sort para ordenar ascendente, con base en el nombre de los supermercados
     bd.sort(function(a, b){
-        if (a.nombre < b.nombre) return -1;
-        if (a.nombre > b.nombre) return 1;
-        return 0;
+        return a.nombre.localeCompare(b.nombre);
     });
 } 
 
@@ -22,7 +20,7 @@ function binary_search_supermercado(A, p, q, r){
         if (r == A[m].nombre){
             posicion = m;
         }else{
-            if (r < A[m].nombre){
+            if (r.localeCompare(A[m].nombre) < 0){
                 posicion = binary_search_supermercado(A, p, m - 1, r);
             }else{
                 posicion = binary_search_supermercado(A, m + 1, q, r);
