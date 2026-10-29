@@ -30,16 +30,16 @@ function ingresarNuevoSupermercado(){
     let produccion = parseInt(document.getElementById("laProduccion").value);
     
     // realizar item 4.a
-
+    let objProveedor = new Proveedor(proveedor, producto, produccion);
     
     // realizar item 4.b
-
+    let objSupermercado = new Supermercado(supermercado, patrimonio, nroTiendas, objProveedor);
     
     // realizar item 4.c
-
+    losSupermercados.push(objSupermercado);
 
     // realizar item 4.d
-
+    aTSalida.value = objSupermercado.toString();
     
     ordenado_supermercado=false;
 }
@@ -49,17 +49,22 @@ function buscarSupermercado(){
         aTSalida.value = "NO HAY SUPERMERCADOS";
     }else{
         // realizar item 5.a
-
+        if (!ordenado_supermercado){
+            ordenarAscendente_supermercado(losSupermercados);
+            ordenado_supermercado = true;
+        }
 
         let elSupermercado = buscado.value;
 
         // realizar item 5.b
-
+        let pos = binary_search_supermercado(losSupermercados, 0, losSupermercados.length - 1, elSupermercado);
 
         let res='NO ENCONTRADO';
 
         // realizar item 5.c
-
+        if (pos != -1){
+            res = losSupermercados[pos].toString() + "\nGanancia:" + losSupermercados[pos].calcularGananciaMensual();
+        }
 
         
         aTSalida.value = res;
