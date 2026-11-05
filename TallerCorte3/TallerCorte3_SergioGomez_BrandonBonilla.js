@@ -1,7 +1,7 @@
 // Taller Estudio Corte 3 - Estructuras de Datos y Algoritmos 1
-// Sergio Gómez Quiñones - Código 2226785 - Grupo 51
+// Sergio Gómez Quiñones (2226785) y Brandon Bonilla - Grupo 51
 // Segunda parte: implementación en JavaScript de proceso1 y proceso2.
-// Se ejecuta con: node TallerCorte3_SergioGomez.js
+// Se ejecuta con: node TallerCorte3_SergioGomez_BrandonBonilla.js
 
 // a) proceso1: cuenta cuántas veces aparece x en A desde la posición p hasta el final
 function proceso1(A, x, p) {
