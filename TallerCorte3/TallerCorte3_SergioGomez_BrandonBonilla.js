@@ -1,5 +1,5 @@
 // Taller Estudio Corte 3 - Estructuras de Datos y Algoritmos 1
-// Sergio Gómez Quiñones (2226785) y Brandon Bonilla - Grupo 51
+// Sergio Gómez Quiñones (2226785) y Brandon Bonilla (2225557) - Grupo 51
 // Segunda parte: implementación en JavaScript de proceso1 y proceso2.
 // Se ejecuta con: node TallerCorte3_SergioGomez_BrandonBonilla.js
 
