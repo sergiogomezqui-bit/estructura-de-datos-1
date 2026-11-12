@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/default.css">
+    <script type="module" src="Scripts/main.js"></script>
+    <title>Tarea final EDyA1 - Tablero de resultados</title>
+</head>
+<body>
+    <header>
+        <img src="Images/Logo-50-años.png" alt="Logo 50 años">
+        <h1>Tarea final - Tablero de resultados (mejor siesta)</h1>
+    </header>
+    <main>
+        <section>
+            <p>Escriba el caso con el formato: professor1;....;professorn--professor time1 time2 appointment;....</p>
+            <textarea id="laEntrada"></textarea><br>
+            <select id="elCaso">
+                <option value="ejemplo" selected>Ejemplo del enunciado</option>
+                <option value="empates">Empates y profesores sin citas</option>
+                <option value="pocas">Un profesor con una sola cita</option>
+            </select>
+            <button id="cargar">Cargar caso</button>
+            <button id="calcular">Calcular mejores siestas</button>
+            <p>Mejor siesta de cada profesor</p>
+            <textarea id="laRespuesta" readonly></textarea><br>
+            <span id="elTiempo"></span>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Proyecto final del curso de EDyA1 en la Universidad Autónoma de Occidente - Sergio Gómez y Brandon Bonilla - Grupo 51</p>
+    </footer>
+</body>
+</html>

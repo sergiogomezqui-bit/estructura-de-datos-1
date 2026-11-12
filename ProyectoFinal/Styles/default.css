@@ -1,0 +1,45 @@
+body{
+    background-color: lightcyan;
+    font-size: 20px;
+    text-align: center;
+}
+
+header img{
+    width: 450px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+h1 {
+    color: blue;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+textArea{
+    width: 700px;
+    height: 170px;
+    border: 2px solid;
+    font-size: 18px;
+}
+
+section p{
+    background-color: lightskyblue;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+select, button{
+    font-size: 18px;
+    margin: 8px 6px;
+}
+
+#elTiempo{
+    font-size: 16px;
+}
+
+footer p{
+    font-size: 16px;
+}
