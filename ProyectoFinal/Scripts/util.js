@@ -1,6 +1,6 @@
 /*
 *  archivo util.js
-*  Creado por: Sergio Gómez y Brandon Bonilla
+*  Creado por: Sergio Gómez, Brandon Bonilla y Samuel Ospina
 *
 *  Descripción:
 *  Contiene la función calcularLongestNaps, que calcula la mejor siesta de n profesores,

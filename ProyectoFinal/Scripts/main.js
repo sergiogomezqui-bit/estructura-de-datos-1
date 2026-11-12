@@ -1,6 +1,6 @@
 /*
 *  archivo main.js
-*  Creado por: Sergio Gómez y Brandon Bonilla
+*  Creado por: Sergio Gómez, Brandon Bonilla y Samuel Ospina
 *
 *  Descripción:
 *  Aplicativo web para calcular la mejor siesta de n profesores,
