@@ -35,12 +35,14 @@ const FIN_DIA = 1440;
     Complejidad total:  O(n + m + n lg n) = O(m + n lg n)
 */
 function calcularLongestNaps(caso) {
-    // 1. el caso se separa en la parte de profesores y la de citas
+    // Complejidad total: O(n + m + n lg n) = O(m + n lg n)
+
+    // 1. el caso se separa en profesores y citas con indexOf y substring - O(n + m)
     let posicion = caso.indexOf('--');
     let encabezado = posicion == -1 ? caso : caso.substring(0, posicion);
     let cuerpo = posicion == -1 ? '' : caso.substring(posicion + 2);
 
-    // 2. se crea un Profesor por cada nombre; el Map permite encontrarlo en O(1)
+    // 2. se crea un Profesor por cada nombre; el Map lo encuentra en O(1) - O(n)
     let nombres = encabezado.split(/[;\s]+/).filter(function (x) { return x != ''; });
     let losProfesores = [];
     let buscar = new Map();
@@ -52,7 +54,7 @@ function calcularLongestNaps(caso) {
         }
     }
 
-    // 3. cada cita (professor time1 time2 appointment) se agrega a su profesor
+    // 3. cada cita se agrega a su profesor; split, Number, Map.get y push son O(1) por cita - O(m)
     for (let cita of cuerpo.split(';')) {
         let datos = cita.trim().split(/\s+/);
         let elProfesor = buscar.get(datos[0]);
@@ -61,12 +63,12 @@ function calcularLongestNaps(caso) {
         }
     }
 
-    // 4. se calcula la mejor siesta de cada profesor
+    // 4. mejor siesta del profesor i: O(m_i); en total O(m_1 + ... + m_n) = O(m), y O(1) por profesor - O(n + m)
     for (let elProfesor of losProfesores) {
         elProfesor.calcularMejorSiesta(INICIO_DIA, FIN_DIA);
     }
 
-    // 5. criterio1: longestNap descendente; criterio2: nombre ascendente
+    // 5. criterio1: longestNap descendente; criterio2: nombre ascendente - O(n lg n)
     losProfesores.sort(function (a, b) {
         if (a.siesta != b.siesta) {
             return b.siesta - a.siesta;
@@ -74,7 +76,7 @@ function calcularLongestNaps(caso) {
         return a.nombre.localeCompare(b.nombre);
     });
 
-    // 6. una línea por profesor: professor longestNap initialTime
+    // 6. una línea por profesor: professor longestNap initialTime - O(n)
     return losProfesores.map(function (x) { return x.toString(); }).join('\n');
 }
 
