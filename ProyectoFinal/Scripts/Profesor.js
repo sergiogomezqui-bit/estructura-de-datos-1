@@ -1,6 +1,6 @@
 /*
 *  Clase Profesor
-*  Creado por: Sergio Gómez, Brandon Bonilla y Samuel Ospina
+*  Creado por: Sergio Gómez (2226785), Brandon Bonilla (2225557) y Samuel Ospina (2230723)
 *
 *  Descripción:
 *  Almacena las citas programadas (scheduled appointments) de un profesor

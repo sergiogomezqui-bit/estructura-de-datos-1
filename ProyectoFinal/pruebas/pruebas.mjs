@@ -1,5 +1,5 @@
 // Pruebas de calcularLongestNaps - Tarea final EDyA1
-// Sergio Gómez Quiñones, Brandon Bonilla y Samuel Ospina - Grupo 51
+// Sergio Gómez Quiñones (2226785), Brandon Bonilla (2225557) y Samuel Ospina (2230723) - Grupo 51
 // Se ejecuta con: node pruebas/pruebas.mjs
 import assert from 'node:assert';
 import {calcularLongestNaps} from '../Scripts/util.js';
